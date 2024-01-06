@@ -1,0 +1,63 @@
+/* 2272021 Christofer Eric B */
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+header,footer {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+@media screen and (max-width:600px){
+    .nav a{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+aside {
+    flex: 30%;
+    padding: 20px;
+}
+
+article {
+    flex: 70%;
+    padding: 20px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    padding: 20px;
+}
